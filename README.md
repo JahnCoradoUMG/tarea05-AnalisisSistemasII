@@ -4,8 +4,6 @@ SPA en React + Vite para inventario, clientes, ventas de mostrador y dashboard o
 
 Curso: Análisis de Sistemas II — UMG Retalhuleu — Tarea 05.
 
-Documentación: carpeta [`../Documentacion/`](../Documentacion/) ([plan](../Documentacion/plan-desarrollo.md), [avance](../Documentacion/avance-fases.md), [avance Dev2](../Documentacion/avance-dev2.md), [guía demo video](../Documentacion/guia-demo-video.md)).
-
 **Estado MVP:** **listo para demo** — implementado y **APROBADO MVP** por QA ([qa-fases-5-8.md](../Documentacion/qa-fases-5-8.md)); checklist §6 cerrado. Sin backend ni Docker en esta entrega.
 
 ## Requisitos
@@ -55,8 +53,6 @@ Servicios: `inventarioService`, `clientesService`, `ventasService`, `dashboardSe
 
 ## Cómo probar el flujo demo
 
-Guion narrado para el video académico: [`guia-demo-video.md`](../Documentacion/guia-demo-video.md).
-
 1. **Dashboard:** abrir `/` → ver conteo/monto de ventas del día y listas de alertas; opcional «Restablecer datos de demostración».
 2. **Venta válida:** Ventas → agregar 1–2 ítems con cantidad ≤ stock → Confirmar → stock baja en Medicamentos y el ticket aparece en historial.
 3. **Venta inválida:** pedir más unidades que el stock (p. ej. Ibuprofeno × 99) → mensaje de error y stock intacto.
@@ -70,7 +66,7 @@ Guion narrado para el video académico: [`guia-demo-video.md`](../Documentacion/
 
 Claves: `farmacia_*`.
 
-## Aprendizajes útiles (informe / video)
+## Aprendizajes útiles
 
 1. Separar **pages → services → repositories** evita acoplar la UI a `localStorage`.
 2. Validar stock **antes** de escribir evita inconsistencias a mitad de una venta.
